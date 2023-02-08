@@ -1,0 +1,57 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 270px;
+  padding: 30px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.avatar {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tag {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 500;
+}
+.status {
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 16px;
+  color: grey;
+  font-weight: 700;
+}
+
+.quantity {
+  margin-top: 6px;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
