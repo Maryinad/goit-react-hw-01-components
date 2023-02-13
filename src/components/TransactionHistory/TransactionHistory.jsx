@@ -1,5 +1,6 @@
 import css from './TransactionHistory.module.css';
 import { getRandomHexColor } from 'components/helpers/GetRandomColor';
+import PropTypes from 'prop-types';
 
 export function TransactionHistory({ items }) {
   return (
@@ -11,7 +12,6 @@ export function TransactionHistory({ items }) {
           <th>Currency</th>
         </tr>
       </thead>
-
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
           <tr
@@ -28,3 +28,14 @@ export function TransactionHistory({ items }) {
     </table>
   );
 }
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
